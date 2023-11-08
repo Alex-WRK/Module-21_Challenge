@@ -1,9 +1,10 @@
-# Report on Alphabet Soup Charity Funding Success Prediction
+# deep-learning-challenge
+## Report on Alphabet Soup Charity Funding Success Prediction
 
-## Executive Summary
+### Executive Summary
 As a Data Analyst at Alphabet Soup Charity, my objective was to create a binary classifier to predict the success of funding applications. By utilizing machine learning and neural networks on a dataset with over 34,000 past applications, I developed a model aimed at distinguishing applicants most likely to succeed upon receiving funding. This report documents the methodologies, processes, and findings of the analytical exercise.
 
-## Data Preprocessing
+### Data Preprocessing
 The foundational stage of data analysis involved loading the dataset for initial exploration. The preprocessing steps encompassed:
 
 - **Target Variable Identification**: The 'IS_SUCCESSFUL' column was identified as the target variable, indicating the effectiveness of the funding usage.
@@ -14,7 +15,7 @@ The foundational stage of data analysis involved loading the dataset for initial
 - **Data Splitting**: Segregated data into feature (X) and target (y) sets, followed by a train-test split.
 - **Feature Scaling**: Normalized feature scales using `StandardScaler` to ensure optimal neural network model input.
 
-## Model Development
+### Model Development
 The neural network model was architected with:
 
 - **Input Layer**: Defined by the post-encoding feature count.
@@ -24,21 +25,21 @@ The neural network model was architected with:
 - **Compilation**: Employed Nadam optimizer for convergence efficacy and binary cross-entropy loss suitable for binary classification.
 - **Callbacks**: `EarlyStopping` was utilized to cease training when no validation loss improvement was detected, avoiding overfitting.
 
-## Training and Evaluation
+### Training and Evaluation
 Model training was executed over multiple epochs with batch size 32, while training and validation accuracies were monitored for learning progression.
 
-## Results
+### Results
 The model attained an accuracy close to 73% on the test set. Though this falls short of the 75% project goal, it establishes a baseline for future enhancement.
 
-## Key Steps for Improvement
+### Key Steps for Improvement
 - **Hyperparameter Tuning**: Plans include methodical tuning of hyperparameters like neurons, layers, and learning rates.
 - **Advanced Feature Engineering**: Further sophisticated feature engineering is expected to improve model performance.
 - **Ensemble Methods**: Application of model ensembles to refine predictions.
 
-## Conclusion and Recommendations
+### Conclusion and Recommendations
 The constructed neural network model lays the groundwork for predictive analytics in funding application success. Despite not achieving the 75% accuracy benchmark, the model's potential is evident. I recommend a progressive model refinement strategy and consideration of alternative machine learning techniques for enhanced accuracy.
 
-## Future Directions
+### Future Directions
 To advance this project, the following is proposed:
 
 - **Implement Cross-Validation**: To assure model consistency across different data subsets.
