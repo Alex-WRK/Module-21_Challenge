@@ -40,6 +40,34 @@ K-Fold Cross-Validation: Applied 5-fold cross-validation to evaluate the model's
 Model Re-Initialization: For each fold, the model was re-initialized to ensure independent and fair evaluation.
 Resulting Accuracy: The K-fold cross-validation model achieved an approximate accuracy of 71%.
 
+### Comparative Analysis of Model Architectures
+In this project, I developed three distinct neural network models to predict the success of funding applications for Alphabet Soup Charity. Each model iteration introduced various optimizations and techniques to enhance performance while maintaining the same preprocessing steps. 
+Below, I visually compare the main differences between all three models:
+
+#### The first model (Starter_code)
+The first model served as our baseline architecture. It primarily focused on a straightforward neural network design without additional regularization or complexity.
+
+<img src="Images/starter_code_1.png" width="800" height="300" alt="starter_code_1">
+<img src="Images/starter_code_2.png" width="800" height="300" alt="starter_code_2">
+<img src="Images/starter_code_3.png" width="800" height="400" alt="starter_code_3">
+
+
+#### The second model (Optimized_code)
+In the optimized model, I introduced several key improvements including increased neuron counts in hidden layers and the implementation of L1 and L2 regularization. These changes aimed to enhance the model's capacity to learn more complex patterns and reduce overfitting.
+
+<img src="Images/optimized_starter_code_1.png" width="800" height="300" alt="optimized_starter_code_1">
+<img src="Images/optimized_starter_code_2.png" width="800" height="100" alt="optimized_starter_code_2">
+<img src="Images/optimized_starter_code_3.png" width="800" height="300" alt="optimized_starter_code_3">
+<img src="Images/optimized_starter_code_4.png" width="800" height="300" alt="optimized_starter_code_4">
+
+#### The third model (Optimized Model with K-Fold Cross-Validation)
+The final iteration of my model employed K-fold cross-validation to ensure robust evaluation. This method provided a more reliable assessment of the model's performance across various subsets of the data.
+
+<img src="Images/KFold_starter_code_1.png" width="800" height="150" alt="KFold_starter_code_1">
+<img src="Images/KFold_starter_code_2.png" width="800" height="300" alt="KFold_starter_code_2">
+<img src="Images/KFold_starter_code_3.png" width="800" height="300" alt="KFold_starter_code_3">
+
+
 ### Training and Evaluation
 Model training was executed over multiple epochs with batch size 32, while training and validation accuracies were monitored for learning progression.
 
